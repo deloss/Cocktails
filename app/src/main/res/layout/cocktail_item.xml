@@ -28,7 +28,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center_horizontal"
-                android:textSize="20sp"
+                style="@style/cocktail_title"
                 tools:text="Campground example"/>
 
             <ImageView

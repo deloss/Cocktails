@@ -8,4 +8,15 @@
         <item name="colorAccent">@android:color/holo_blue_bright</item>
     </style>
 
+    <style name="cocktail_title">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_marginBottom">16dp</item>
+    </style>
+
+    <style name="cocktail_details_ingredients_label">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
 </resources>
