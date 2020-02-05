@@ -24,7 +24,7 @@ class CocktailAdapter(var cocktails: List<Cocktail>, val listener: CocktailRecyc
         fun bind(cocktail: Cocktail, listener: CocktailRecyclerViewItemClickListener) {
             itemView.cocktail_title.text = cocktail.strDrink
             Glide.with(itemView.context).load(cocktail.strDrinkThumb).into(itemView.cocktail_image)
-            itemView.cocktail_card.setOnClickListener{_ -> listener.onItemClicked(cocktail.idDrink)}
+            itemView.cocktail_card.setOnClickListener{listener.onItemClicked(cocktail.idDrink)}
         }
     }
 }
