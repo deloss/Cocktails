@@ -19,4 +19,10 @@
         <item name="android:layout_marginBottom">8dp</item>
     </style>
 
+    <style name="cocktails_recycler_view">
+        <item name="android:background">@android:color/holo_blue_light</item>
+        <item name="android:paddingLeft">@dimen/big_spacing</item>
+        <item name="android:paddingRight">@dimen/big_spacing</item>
+    </style>
+
 </resources>

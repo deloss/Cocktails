@@ -25,32 +25,37 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         card_view:cardElevation="4dp"
-        android:layout_margin="16dp"
+        android:layout_margin="@dimen/big_spacing"
         android:id="@+id/cocktail_card">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:padding="16dp"
-            android:weightSum="2">
+            android:orientation="vertical"
+            android:padding="@dimen/big_spacing">
+
+            <ImageView
+                android:id="@+id/cocktail_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/small_spacing"/>
 
             <LinearLayout
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:id="@+id/cocktail_name"
-                    style="@style/cocktail_title"/>
+                    style="@style/cocktail_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
 
                 <TextView
+                    style="@style/cocktail_details_ingredients_label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    style="@style/cocktail_details_ingredients_label"
                     android:text="Ingredients:" />
 
                 <LinearLayout
@@ -61,12 +66,7 @@
             </LinearLayout>
 
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:id="@+id/cocktail_image"
-                android:layout_marginLeft="8dp"/>
+
 
 
         </LinearLayout>

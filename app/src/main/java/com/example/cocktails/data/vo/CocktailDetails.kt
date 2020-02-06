@@ -1,8 +1,5 @@
 package com.example.cocktails.data.vo
 
-
-import com.google.gson.annotations.SerializedName
-
 data class CocktailDetails(
     val strDrink: String,
     val strDrinkThumb: String,
